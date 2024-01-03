@@ -1,0 +1,34 @@
+<h1>New Control Flow</h1>
+
+<h3 appHighlight>If decorator</h3>
+
+<div>
+  <input
+    type="number"
+    [ngModel]="todoNumber"
+    (ngModelChange)="getAndSetTodoNumber($event)"
+    placeholder="Enter Todo ID here..."
+  />
+</div>
+
+@if (singleData$ | async; as todo) {
+  @if (todo.id) {
+    <p>{{ todo | json }}</p>
+  } @else {
+    <p>Choose a todo number!...</p>
+  }
+}
+
+<h3 appHighlight>For decorator</h3>
+
+@if (allData$ | async; as todos) {
+  @for (todo of todos; track todo.id; let idx = $index) {
+    @if (idx < 5) {
+      <p>
+        {{ todo.id }} - <strong>{{ todo.title }}</strong>
+      </p>
+    }
+  } @empty {
+    <p>There are no items!</p>
+  }
+}
