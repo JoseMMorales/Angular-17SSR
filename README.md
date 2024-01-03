@@ -43,7 +43,14 @@ Please follow links below to have a look:
 - `https://angular.dev/guide/templates/control-flow`
 - `https://angular.dev/guide/defer`
 
-### Technology
+## Download
+
+- `$git clone https://github.com/JoseMMorales/Angular-17SSR.git`
+- `$cd angular17SSR`
+- `npm install`
+- `npm start`
+
+## Technology
 
 <b>@angular/cli:</b> "^17.0.7",<br>
 <b>@ngrx/effects:</b> "^17.0.1",<br>
@@ -52,6 +59,6 @@ Please follow links below to have a look:
 <b>typescript:</b> "~5.2.2"<br>
 <b>prettier:</b> "3.1" => Format new Angular 17 syntax on template [Download here](https://www.npmjs.com/package/prettier)
 
-### Author
+## Author
 
 JOSEMMORALES
